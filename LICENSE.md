@@ -1,4 +1,5 @@
 Licencia MIT (MIT)
+
 Copyright (c) 2025 W3BTechnologies
 Copyright (c) 2025 Francisco J. Morales - contacto@w3btech.com
 
