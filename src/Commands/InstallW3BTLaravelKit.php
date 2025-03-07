@@ -8,7 +8,7 @@ class InstallW3BTLaravelKit extends Command
 {
     protected $signature = 'w3btlaravelkit:install';
 
-    protected $description = 'Instala W3BLaravelKit con Livewire, Tailwind con Daysi UI y Vite, Laravel Lang en Español y Laravel Modules';
+    protected $description = 'Instala Paquetes para la Configuracion Inicial de Proyectos';
 
     public function handle()
     {
