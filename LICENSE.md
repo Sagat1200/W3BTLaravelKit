@@ -1,6 +1,7 @@
 Licencia MIT (MIT)
 
 Copyright (c) 2025 W3BTechnologies
+
 Copyright (c) 2025 Francisco J. Morales - contacto@w3btech.com
 
 Se concede permiso, de forma gratuita, a cualquier persona que obtenga una copia de este software y los archivos de documentación asociados (el "Software"), para utilizar el Software sin restricciones, incluyendo, sin limitación, los derechos de:
