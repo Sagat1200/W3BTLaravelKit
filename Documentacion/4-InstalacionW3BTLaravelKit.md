@@ -33,7 +33,7 @@ php w3btlaravelkit:livewire-module {nombreModulo} {nombreComponenteLivewire}
 ### 📂 Proceso de Instalación y Configuración
 ### ➡️ En [Operacion W3BTLaravelKit](https://github.com/Sagat1200/W3BTLaravelKit/blob/main/Documentacion/5-OperacionW3BTLaravelKit.md)
 
-### 📂 Generación de Módulos y Componentes Livewire
+### 📂 Generación de Componentes Livewire en Laravel Modules
 ### ➡️ En [Operacion W3BTLaravelKitLivewire](https://github.com/Sagat1200/W3BTLaravelKit/blob/main/Documentacion/6-OperacionW3BTLaravelKitLivewire.md)
 
 ## ⚠️ Recomendación Importante
