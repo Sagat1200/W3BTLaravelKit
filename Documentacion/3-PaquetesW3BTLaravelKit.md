@@ -44,6 +44,8 @@
 
 [<button class="btn btn-primary">Guardar</button>](https://daisyui.com/components/button/)
 
+[alt text](image.png)
+
 ## 🌍 Laravel Lang
 
 ### 📌 Sistema de gestión de traducciones en Laravel para internacionalización.
