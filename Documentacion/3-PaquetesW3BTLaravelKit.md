@@ -41,8 +41,8 @@
 ### ✅ Mejora la estructura y reutilización de componentes.
 
 ### Ejemplo de un botón con DaisyUI:
-### 🔹<button class="btn btn-primary">Guardar</button>
-
+```<button class="btn btn-primary">Guardar</button>
+```
 ## 🌍 Laravel Lang
 
 ### 📌 Sistema de gestión de traducciones en Laravel para internacionalización.
