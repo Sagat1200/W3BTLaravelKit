@@ -126,8 +126,6 @@
 
 ![Icono blade UI](image-1.png)
 
-### 🔹<x-input label="Correo Electrónico" name="email" placeholder="ejemplo@email.com" />
-
 ## 🎨 Blade FontAwesome
 
 ### 📌 Facilita el uso de íconos de FontAwesome en Laravel Blade.
@@ -144,5 +142,7 @@
 
 ### Ejemplo de ícono en Blade:
 
-### 🔹<x-fas-user class="text-blue-500 w-6 h-6" />
+```sh
+ <x-fas-cloud/>
+```
 
