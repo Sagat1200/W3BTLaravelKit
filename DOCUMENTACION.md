@@ -20,7 +20,7 @@ A continuación, se presentan los paquetes incluidos en W3BTLaravelKit, junto co
 
 📌 ¿Qué es Laravel Livewire?
 
-Livewire permite la comunicación entre el frontend y backend de manera eficiente, enviando solo los datos necesarios y actualizando el DOM sin necesidad de recargar la página. Se integra completamente con Blade, evitando el uso de frameworks frontend como Vue.js o React.
+🔹Livewire permite la comunicación entre el frontend y backend de manera eficiente, enviando solo los datos necesarios y actualizando el DOM sin necesidad de recargar la página. Se integra completamente con Blade, evitando el uso de frameworks frontend como Vue.js o React.
 
 🔥 Ventajas de Livewire
 
@@ -37,7 +37,7 @@ Livewire permite la comunicación entre el frontend y backend de manera eficient
 
 ¿Por qué Livewire?
 
-Si bien existen alternativas como Vue.js o React, Livewire mantiene el entorno 100% PHP, lo que facilita el desarrollo sin necesidad de manejar múltiples tecnologías.
+🔹Si bien existen alternativas como Vue.js o React, Livewire mantiene el entorno 100% PHP, lo que facilita el desarrollo sin necesidad de manejar múltiples tecnologías.
 
 🎨 DaisyUI
 
@@ -54,7 +54,7 @@ Si bien existen alternativas como Vue.js o React, Livewire mantiene el entorno 1
 ✅ Mejora la estructura y reutilización de componentes.
 
 Ejemplo de un botón con DaisyUI:
-<button class="btn btn-primary">Guardar</button>
+🔹<button class="btn btn-primary">Guardar</button>
 
 🌍 Laravel Lang
 
@@ -72,7 +72,7 @@ Ejemplo de un botón con DaisyUI:
 
 ¿Por qué incluir Laravel Lang?
 
-Laravel está diseñado en inglés por defecto, pero este paquete permite traducir de forma automática al español u otros idiomas sin esfuerzo adicional.
+🔹Laravel está diseñado en inglés por defecto, pero este paquete permite traducir de forma automática al español u otros idiomas sin esfuerzo adicional.
 
 📁 Laravel Modules
 
@@ -90,11 +90,11 @@ Laravel está diseñado en inglés por defecto, pero este paquete permite traduc
 
 Ejemplo de creación de un módulo:
 
-php artisan module:make Ventas
+🔹php artisan module:make Ventas
 
 ¿Por qué usar Laravel Modules?
 
-Este paquete permite una separación lógica del código, lo que facilita el mantenimiento y reusabilidad en distintos proyectos.
+🔹Este paquete permite una separación lógica del código, lo que facilita el mantenimiento y reusabilidad en distintos proyectos.
 
 📊 Livewire PowerGrid
 
@@ -114,7 +114,7 @@ Este paquete permite una separación lógica del código, lo que facilita el man
 
 ¿Por qué usar Livewire PowerGrid?
 
-Ideal para aplicaciones SaaS, ERPs y CRMs que manejan grandes volúmenes de datos.
+🔹Ideal para aplicaciones SaaS, ERPs y CRMs que manejan grandes volúmenes de datos.
 
 Ejemplo de uso en Blade:
 
@@ -136,7 +136,7 @@ Ejemplo de uso en Blade:
 
 Ejemplo de un input con Blade UI:
 
-<x-input label="Correo Electrónico" name="email" placeholder="ejemplo@email.com" />
+🔹<x-input label="Correo Electrónico" name="email" placeholder="ejemplo@email.com" />
 
 🎨 Blade FontAwesome
 
@@ -154,7 +154,7 @@ Ejemplo de un input con Blade UI:
 
 Ejemplo de ícono en Blade:
 
-<x-fas-user class="text-blue-500 w-6 h-6" />
+🔹<x-fas-user class="text-blue-500 w-6 h-6" />
 
 ##### 🚀 Instalación y Uso  
 Al instalar el paquete, se habilitan dos comandos **Artisan** para su utilización:
