@@ -42,8 +42,6 @@
 
 ### Ejemplo de un botón con DaisyUI:
 
-[Botones daysiUI](imagen-Botones_daysiUI.png)
-
 ## 🌍 Laravel Lang
 
 ### 📌 Sistema de gestión de traducciones en Laravel para internacionalización.
