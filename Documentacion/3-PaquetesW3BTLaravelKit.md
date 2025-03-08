@@ -26,6 +26,11 @@
 
 ### 🔹Si bien existen alternativas como Vue.js o React, Livewire mantiene el entorno 100% PHP, lo que facilita el desarrollo sin necesidad de manejar múltiples tecnologías.
 
+### Ejemplo de Inicializacion de componente Livwire:
+
+```sh
+ php artisan make:livewire counter
+```
 ## 🎨 DaisyUI
 
 ### 📌 Biblioteca de componentes UI para Tailwind CSS que simplifica la creación de interfaces.
@@ -78,7 +83,9 @@
 
 ### Ejemplo de creación de un módulo:
 
-### 🔹php artisan module:make Ventas
+```sh
+ php artisan module:make Ventas
+```
 
 ### ¿Por qué usar Laravel Modules?
 
@@ -106,7 +113,9 @@
 
 ### Ejemplo de uso en Blade:
 
-### 🔹 <livewire:cliente-table />
+```sh
+ <livewire:cliente-table />
+```
 
 ## 🖼️ Blade UI Kit
 
@@ -124,7 +133,9 @@
 
 ### Ejemplo de un input con Blade UI:
 
-![Icono blade UI](image-1.png)
+```sh
+ <x-avatar/>
+```
 
 ## 🎨 Blade FontAwesome
 
