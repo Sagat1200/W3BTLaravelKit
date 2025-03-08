@@ -42,7 +42,7 @@
 
 ### Ejemplo de un botón con DaisyUI:
 
-[alt text](imagen-Botones_daysiUI.png)
+[Botones daysiUI](imagen-Botones_daysiUI.png)
 
 ## 🌍 Laravel Lang
 
