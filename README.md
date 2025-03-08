@@ -57,16 +57,16 @@ composer require w3btech/w3btlaravelkit
 ```sh
 php artisan w3btlaravelkit:install
 ```
-## Practicamente eso es todo, su entorno de desarrollo con los paquetes instalados y la configuracion necesaria para su funcionamiento esta echa, esperamos en 
-## **W3BTechnologies de Mexico** que este paquete sea de su enetera satisfaccion.
+Practicamente eso es todo, su entorno de desarrollo con los paquetes instalados y la configuracion necesaria para su funcionamiento esta echa, esperamos en 
+**W3BTechnologies de Mexico** que este paquete sea de su enetera satisfaccion.
 
 ## 📜 Licencia 
 
-## Este software está licenciado bajo MIT License. Consulta el archivo LICENSE.md para más información.
+Este software está licenciado bajo MIT License. Consulta el archivo LICENSE.md para más información.
 
 ## 🤝 Créditos
-## Desarrollado con ❤️ por:
+Desarrollado con ❤️ por:
 
-## 👤 Francisco J. Morales
-## 🔗 GitHub: [FranciscoJ.Morales](https://github.com/Sagat1200)
-## 🔗 Web: [w3btech.com](https://w3btech.com)
+👤 Francisco J. Morales
+🔗 GitHub: [FranciscoJ.Morales](https://github.com/Sagat1200)
+🔗 Web: [w3btech.com](https://w3btech.com)
