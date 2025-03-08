@@ -40,7 +40,7 @@
 
 ### ✅ Mejora la estructura y reutilización de componentes.
 
-### Ejemplo de un botón con DaisyUI:
+### Ejemplo de botones con DaisyUI:
 
 ![Botones daysiUI](image.png)
 
@@ -123,6 +123,8 @@
 ### ✅ Soporte nativo para Livewire.
 
 ### Ejemplo de un input con Blade UI:
+
+![Icono blade UI](image-1.png)
 
 ### 🔹<x-input label="Correo Electrónico" name="email" placeholder="ejemplo@email.com" />
 
