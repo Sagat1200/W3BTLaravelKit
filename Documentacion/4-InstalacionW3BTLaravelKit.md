@@ -4,8 +4,13 @@
 ```bash
 composer require w3btech/w3btlaravelkit
 ```
-## Despues de instalar el paquete viene la ⚙️ ejecucion del comando **Artisan**:
+## Al descargar el paquete del repositorio oficial de **composer** se instalaran 2 comandos **Artisan** que le ayudaran en la configuracion de su entorno de desarrollo de una forma rapida y estructurada:
+
 ```bash
-php artisan w3btlaravelkit:install
-🔹 Instala automáticamente los paquetes esenciales y configura el entorno de desarrollo.
+php w3btlaravelkit:install
+```
+## Dicho comando descargara de los repositorios oficiales de **composer** los paquetes que contempla **W3BTLaravelkit** para el desarrollo de aplicaciones **SPA** web y aplicaciones móviles con Laravel.
+
+```bash
+php w3btlaravelkit:install
 ```

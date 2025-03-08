@@ -1,144 +1,145 @@
-# 📦 Paquetes Incluidos en W3BTLaravelKit
-A continuación, se presentan los paquetes incluidos en W3BTLaravelKit, junto con una breve descripción y sus beneficios.
+# 📦 Paquetes Incluidos en **W3BTLaravelKit**
+
+### A continuación, se presentan los paquetes incluidos en **W3BTLaravelKit**, junto con una breve descripción y sus beneficios.
 
 ## ✅ Laravel Livewire
 
-📌 Framework Full-Stack para Laravel que permite construir interfaces dinámicas sin JavaScript.
+### 📌 Framework Full-Stack para Laravel que permite construir interfaces dinámicas sin JavaScript.
 
-📌 ¿Qué es Laravel Livewire?
+### 📌 ¿Qué es Laravel Livewire?
 
-🔹Livewire permite la comunicación entre el frontend y backend de manera eficiente, enviando solo los datos necesarios y actualizando el DOM sin necesidad de recargar la página. Se integra completamente con Blade, evitando el uso de frameworks frontend como Vue.js o React.
+### 🔹Livewire permite la comunicación entre el frontend y backend de manera eficiente, enviando solo los datos necesarios y actualizando el DOM sin necesidad de recargar la página. Se integra completamente con Blade, evitando el uso de frameworks frontend como Vue.js o React.
 
-🔥 Ventajas de Livewire
+### 🔥 Ventajas de Livewire
 
-✅ Desarrollo sin necesidad de JavaScript.
+### ✅ Desarrollo sin necesidad de JavaScript.
 
-✅ Integración total con Laravel y Blade.
+### ✅ Integración total con Laravel y Blade.
 
-✅ Estado persistente en los componentes.
+### ✅ Estado persistente en los componentes.
 
-✅ Soporte para validaciones en tiempo real.
+### ✅ Soporte para validaciones en tiempo real.
 
-✅ Perfecto para aplicaciones SPA con wire:navigate.
+### ✅ Perfecto para aplicaciones SPA con wire:navigate.
 
-¿Por qué Livewire?
+### ¿Por qué Livewire?
 
-🔹Si bien existen alternativas como Vue.js o React, Livewire mantiene el entorno 100% PHP, lo que facilita el desarrollo sin necesidad de manejar múltiples tecnologías.
+### 🔹Si bien existen alternativas como Vue.js o React, Livewire mantiene el entorno 100% PHP, lo que facilita el desarrollo sin necesidad de manejar múltiples tecnologías.
 
-### 🎨 DaisyUI
+## 🎨 DaisyUI
 
-📌 Biblioteca de componentes UI para Tailwind CSS que simplifica la creación de interfaces.
+### 📌 Biblioteca de componentes UI para Tailwind CSS que simplifica la creación de interfaces.
 
-🎯 ¿Por qué usar DaisyUI?
+### 🎯 ¿Por qué usar DaisyUI?
 
-✅ Agiliza el desarrollo con componentes listos para usar.
+### ✅ Agiliza el desarrollo con componentes listos para usar.
 
-✅ Facilita la integración con Livewire y Blade.
+### ✅ Facilita la integración con Livewire y Blade.
 
-✅ Ofrece soporte para temas predefinidos y modo oscuro.
+### ✅ Ofrece soporte para temas predefinidos y modo oscuro.
 
-✅ Mejora la estructura y reutilización de componentes.
+### ✅ Mejora la estructura y reutilización de componentes.
 
-Ejemplo de un botón con DaisyUI:
-🔹<button class="btn btn-primary">Guardar</button>
+### Ejemplo de un botón con DaisyUI:
+### 🔹<button class="btn btn-primary">Guardar</button>
 
-#### 🌍 Laravel Lang
+## 🌍 Laravel Lang
 
-📌 Sistema de gestión de traducciones en Laravel para internacionalización.
+### 📌 Sistema de gestión de traducciones en Laravel para internacionalización.
 
-🔍 ¿Para qué sirve Laravel Lang?
+### 🔍 ¿Para qué sirve Laravel Lang?
 
-✅ Traducción automática de textos en aplicaciones multilingües.
+### ✅ Traducción automática de textos en aplicaciones multilingües.
 
-✅ Personalización de mensajes de validación y errores.
+### ✅ Personalización de mensajes de validación y errores.
 
-✅ Selección dinámica de idioma según el usuario.
+### ✅ Selección dinámica de idioma según el usuario.
 
-✅ Administración centralizada de traducciones en archivos JSON o PHP.
+### ✅ Administración centralizada de traducciones en archivos JSON o PHP.
 
-¿Por qué incluir Laravel Lang?
+### ¿Por qué incluir Laravel Lang?
 
-🔹Laravel está diseñado en inglés por defecto, pero este paquete permite traducir de forma automática al español u otros idiomas sin esfuerzo adicional.
+### 🔹Laravel está diseñado en inglés por defecto, pero este paquete permite traducir de forma automática al español u otros idiomas sin esfuerzo adicional.
 
-📁 Laravel Modules
+## 📁 Laravel Modules
 
-📌 Arquitectura modular para Laravel, ideal para proyectos grandes y escalables.
+### 📌 Arquitectura modular para Laravel, ideal para proyectos grandes y escalables.
 
-🎯 Beneficios de Laravel Modules
+### 🎯 Beneficios de Laravel Modules
 
-✅ Organización del código en módulos reutilizables.
+### ✅ Organización del código en módulos reutilizables.
 
-✅ Permite un desarrollo colaborativo más eficiente.
+### ✅ Permite un desarrollo colaborativo más eficiente.
 
-✅ Escalabilidad sin afectar el núcleo del proyecto.
+### ✅ Escalabilidad sin afectar el núcleo del proyecto.
 
-✅ Modularización sin necesidad de convertir la aplicación en microservicios.
+### ✅ Modularización sin necesidad de convertir la aplicación en microservicios.
 
-Ejemplo de creación de un módulo:
+### Ejemplo de creación de un módulo:
 
-🔹php artisan module:make Ventas
+### 🔹php artisan module:make Ventas
 
-¿Por qué usar Laravel Modules?
+### ¿Por qué usar Laravel Modules?
 
-🔹Este paquete permite una separación lógica del código, lo que facilita el mantenimiento y reusabilidad en distintos proyectos.
+### 🔹Este paquete permite una separación lógica del código, lo que facilita el mantenimiento y reusabilidad en distintos proyectos.
 
-##### 📊 Livewire PowerGrid
+## 📊 Livewire PowerGrid
 
-📌 Creación de tablas interactivas sin necesidad de JavaScript.
+### 📌 Creación de tablas interactivas sin necesidad de JavaScript.
 
-🎯 ¿Para qué se usa Livewire PowerGrid?
+### 🎯 ¿Para qué se usa Livewire PowerGrid?
 
-✅ Generación de tablas dinámicas con búsqueda, filtros y paginación.
+### ✅ Generación de tablas dinámicas con búsqueda, filtros y paginación.
 
-✅ Renderizado de datos desde Eloquent o consultas SQL.
+### ✅ Renderizado de datos desde Eloquent o consultas SQL.
 
-✅ Exportación de datos a CSV, Excel y PDF.
+### ✅ Exportación de datos a CSV, Excel y PDF.
 
-✅ Acciones integradas como edición y eliminación de registros.
+### ✅ Acciones integradas como edición y eliminación de registros.
 
-✅ Manejo de eventos Livewire dentro de las tablas.
+### ✅ Manejo de eventos Livewire dentro de las tablas.
 
-¿Por qué usar Livewire PowerGrid?
+### ¿Por qué usar Livewire PowerGrid?
 
-🔹Ideal para aplicaciones SaaS, ERPs y CRMs que manejan grandes volúmenes de datos.
+### 🔹Ideal para aplicaciones SaaS, ERPs y CRMs que manejan grandes volúmenes de datos.
 
-Ejemplo de uso en Blade:
+### Ejemplo de uso en Blade:
 
-🔹 <livewire:cliente-table />
+### 🔹 <livewire:cliente-table />
 
-###### 🖼️ Blade UI Kit
+## 🖼️ Blade UI Kit
 
-📌 Colección de componentes reutilizables para Laravel Blade.
+### 📌 Colección de componentes reutilizables para Laravel Blade.
 
-🎯 Beneficios de Blade UI Kit
+### 🎯 Beneficios de Blade UI Kit
 
-✅ Uso de componentes semánticos para formularios, botones, alertas, etc.
+### ✅ Uso de componentes semánticos para formularios, botones, alertas, etc.
 
-✅ Integración con Tailwind CSS.
+### ✅ Integración con Tailwind CSS.
 
-✅ Mayor legibilidad y mantenimiento del código.
+### ✅ Mayor legibilidad y mantenimiento del código.
 
-✅ Soporte nativo para Livewire.
+### ✅ Soporte nativo para Livewire.
 
-Ejemplo de un input con Blade UI:
+### Ejemplo de un input con Blade UI:
 
-🔹<x-input label="Correo Electrónico" name="email" placeholder="ejemplo@email.com" />
+### 🔹<x-input label="Correo Electrónico" name="email" placeholder="ejemplo@email.com" />
 
-###### 🎨 Blade FontAwesome
+## 🎨 Blade FontAwesome
 
-📌 Facilita el uso de íconos de FontAwesome en Laravel Blade.
+### 📌 Facilita el uso de íconos de FontAwesome en Laravel Blade.
 
-🎯 ¿Por qué Blade FontAwesome?
+### 🎯 ¿Por qué Blade FontAwesome?
 
-✅ Permite usar íconos sin escribir código HTML complejo.
+### ✅ Permite usar íconos sin escribir código HTML complejo.
 
-✅ Soporte para FontAwesome Free y Pro.
+### ✅ Soporte para FontAwesome Free y Pro.
 
-✅ Compatible con Livewire.
+### ✅ Compatible con Livewire.
 
-✅ Mejora la organización y reutilización del código.
+### ✅ Mejora la organización y reutilización del código.
 
-Ejemplo de ícono en Blade:
+### Ejemplo de ícono en Blade:
 
-🔹<x-fas-user class="text-blue-500 w-6 h-6" />
+### 🔹<x-fas-user class="text-blue-500 w-6 h-6" />
 

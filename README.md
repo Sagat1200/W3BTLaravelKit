@@ -51,15 +51,22 @@ Para instalar **W3BTLaravelKit** en tu proyecto Laravel, ejecuta:
 
 ```sh
 composer require w3btech/w3btlaravelkit
+```
+## Despues de la instalacion ejecute:
 
-Despues de la instalacion ejecute: php artisan w3btech:install
+```sh
+php artisan w3btlaravelkit:install
+```
+## Practicamente eso es todo, su entorno de desarrollo con los paquetes instalados y la configuracion necesaria para su funcionamiento esta echa, esperamos en 
+## **W3BTechnologies de Mexico** que este paquete sea de su enetera satisfaccion.
 
-📜 Licencia
-Este software está licenciado bajo MIT License. Consulta el archivo LICENSE.md para más información.
+## 📜 Licencia 
 
-🤝 Créditos
-Desarrollado con ❤️ por:
+## Este software está licenciado bajo MIT License. Consulta el archivo LICENSE.md para más información.
 
-👤 Francisco J. Morales
-🔗 GitHub: [FranciscoJ.Morales](https://github.com/Sagat1200)
-🔗 Web: [w3btech.com](https://w3btech.com)
+## 🤝 Créditos
+## Desarrollado con ❤️ por:
+
+## 👤 Francisco J. Morales
+## 🔗 GitHub: [FranciscoJ.Morales](https://github.com/Sagat1200)
+## 🔗 Web: [w3btech.com](https://w3btech.com)
