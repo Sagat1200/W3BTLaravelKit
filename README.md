@@ -62,7 +62,7 @@ Practicamente eso es todo, su entorno de desarrollo con los paquetes instalados 
 
 ## 📜 Licencia 
 
-Este software está licenciado bajo MIT License. Consulta el archivo LICENSE.md para más información.
+Este software está licenciado bajo MIT License. Consulta el archivo [LICENSE.md](https://github.com/Sagat1200/W3BTLaravelKit/blob/main/LICENSE.md) para más información.
 
 ## 🤝 Créditos
 Desarrollado con ❤️ por:
