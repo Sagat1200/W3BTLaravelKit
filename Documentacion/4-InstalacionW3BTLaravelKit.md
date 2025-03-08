@@ -2,12 +2,10 @@
 
 ## ⬇️ Instalación a través de **Composer**  
 ### Ejecute el siguiente comando en su terminal para instalar el paquete:  
-
 ```bash
 composer require w3btech/w3btlaravelkit
 ```
-
-### 🛠 Comandos Artisan Disponibles
+### 🛠 Comandos Artisan Disponibles:
 ### 📌 1. Instalación y Configuración Automática:
 
 ```bash
@@ -22,7 +20,6 @@ php w3btlaravelkit:install
 ```bash
 php w3btlaravelkit:livewire-module {nombreModulo} {nombreComponenteLivewire}
 ```
-
 ### Este comando genera automáticamente:
 ### ✅ Clases y vistas Blade necesarias para manejar Livewire dentro de módulos.
 ### ✅ Tarjeta para renderizar el componente en una vista Blade.
