@@ -5,9 +5,10 @@
 
 ```bash
 composer require w3btech/w3btlaravelkit
+```
 
-🛠 Comandos Artisan Disponibles
-📌 1. Instalación y Configuración Automática:
+### 🛠 Comandos Artisan Disponibles
+### 📌 1. Instalación y Configuración Automática:
 
 ```bash
 php w3btlaravelkit:install
