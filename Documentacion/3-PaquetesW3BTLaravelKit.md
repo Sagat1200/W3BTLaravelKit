@@ -2,7 +2,7 @@
 
 ### A continuación, se presentan los paquetes incluidos en **W3BTLaravelKit**, junto con una breve descripción y sus beneficios.
 
-## ✅ Laravel Livewire
+## ✅ [Laravel Livewire](https://livewire.laravel.com)
 
 ### 📌 Framework Full-Stack para Laravel que permite construir interfaces dinámicas sin JavaScript.
 
@@ -31,7 +31,7 @@
 ```sh
  php artisan make:livewire counter
 ```
-## 🎨 DaisyUI
+## 🎨 [DaisyUI](https://daisyui.com)
 
 ### 📌 Biblioteca de componentes UI para Tailwind CSS que simplifica la creación de interfaces.
 
@@ -49,7 +49,7 @@
 
 ![Botones daysiUI](image.png)
 
-## 🌍 Laravel Lang
+## 🌍 [Laravel Lang](https://laravel-lang.com/introduction.html)
 
 ### 📌 Sistema de gestión de traducciones en Laravel para internacionalización.
 
@@ -67,7 +67,7 @@
 
 ### 🔹Laravel está diseñado en inglés por defecto, pero este paquete permite traducir de forma automática al español u otros idiomas sin esfuerzo adicional.
 
-## 📁 Laravel Modules
+## 📁 [Laravel Modules](https://laravelmodules.com)
 
 ### 📌 Arquitectura modular para Laravel, ideal para proyectos grandes y escalables.
 
@@ -91,7 +91,7 @@
 
 ### 🔹Este paquete permite una separación lógica del código, lo que facilita el mantenimiento y reusabilidad en distintos proyectos.
 
-## 📊 Livewire PowerGrid
+## 📊 [Livewire PowerGrid](https://livewire-powergrid.com)
 
 ### 📌 Creación de tablas interactivas sin necesidad de JavaScript.
 
@@ -117,7 +117,7 @@
  <livewire:cliente-table />
 ```
 
-## 🖼️ Blade UI Kit
+## 🖼️ [Blade UI Kit](https://blade-ui-kit.com/blade-icons)
 
 ### 📌 Colección de componentes reutilizables para Laravel Blade.
 
@@ -137,7 +137,7 @@
  <x-avatar/>
 ```
 
-## 🎨 Blade FontAwesome
+## 🎨 [Blade FontAwesome](https://github.com/owenvoke/blade-fontawesome)
 
 ### 📌 Facilita el uso de íconos de FontAwesome en Laravel Blade.
 
@@ -156,4 +156,4 @@
 ```sh
  <x-fas-cloud/>
 ```
-
+### Estos son los paquetes de inicio que [W3BTLaravelKit](https://github.com/Sagat1200/W3BTLaravelKit/blob/main/README.md) utilizara en su 1era version, conforme pase el tiempo y a propuesta de la comunidad se iran modificando paquetes.
