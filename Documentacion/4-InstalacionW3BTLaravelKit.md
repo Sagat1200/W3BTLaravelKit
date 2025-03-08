@@ -19,3 +19,5 @@ php w3btlaravelkit:livewire-module {nombreModulo} {nombreComponenteLivewire}
 ### En [Operacion W3BTLaravelKit](https://github.com/Sagat1200/W3BTLaravelKit/blob/main/Documentacion/5-OperacionW3BTLaravelKit.md) se informara del procedimiento que realiza el comando **php w3btlaravelkit:install** al instalar y configuarar cada paquete descargado.
 
 ### En [Operacion W3BTLaravelKitLivewire](https://github.com/Sagat1200/W3BTLaravelKit/blob/main/Documentacion/6-OperacionW3BTLaravelKitLivewire.md) se informara del procedimiento que realiza el comando **php w3btlaravelkit:livewire-module {nombreModulo} {nombreComponenteLivewire}** al crear componentes Livewire para Laravel Modules.
+
+### Se les recomienda encarecidamente que lean la documentacion de cada paquete utilizado en [W3BTLaravelKit](https://github.com/Sagat1200/W3BTLaravelKit) a fin de que se conozca su funcionamiento y alcanses.
