@@ -1,20 +1,7 @@
-
-# 🚀 W3BTLaravelKit - Documentación Oficial  
-
-## 📌 Introducción  
-**W3BTLaravelKit** está diseñado para ofrecer la mejor experiencia en el desarrollo de **proyectos Laravel SPA**, proporcionando una instalación y configuración automática de paquetes esenciales. Su propósito es simplificar el proceso de configuración inicial, permitiendo a los desarrolladores enfocarse en la construcción de sus aplicaciones sin preocuparse por la instalación manual de dependencias.
-
-### 🎯 ¿Por qué usar W3BTLaravelKit?  
-En el desarrollo de software, uno de los mayores desafíos al iniciar un proyecto es:  
-1️⃣ **El tiempo requerido para instalar y configurar múltiples paquetes esenciales.**  
-2️⃣ **La complejidad de la configuración inicial para garantizar seguridad y buen rendimiento.**  
-
-**W3BTLaravelKit** resuelve estos problemas al proporcionar una solución que instala y configura automáticamente los paquetes más utilizados en el desarrollo de aplicaciones web y móviles con Laravel.
-
-#### 📦 Paquetes Incluidos en W3BTLaravelKit
+# 📦 Paquetes Incluidos en W3BTLaravelKit
 A continuación, se presentan los paquetes incluidos en W3BTLaravelKit, junto con una breve descripción y sus beneficios.
 
-✅ Laravel Livewire
+## ✅ Laravel Livewire
 
 📌 Framework Full-Stack para Laravel que permite construir interfaces dinámicas sin JavaScript.
 
@@ -34,12 +21,11 @@ A continuación, se presentan los paquetes incluidos en W3BTLaravelKit, junto co
 
 ✅ Perfecto para aplicaciones SPA con wire:navigate.
 
-
 ¿Por qué Livewire?
 
 🔹Si bien existen alternativas como Vue.js o React, Livewire mantiene el entorno 100% PHP, lo que facilita el desarrollo sin necesidad de manejar múltiples tecnologías.
 
-🎨 DaisyUI
+### 🎨 DaisyUI
 
 📌 Biblioteca de componentes UI para Tailwind CSS que simplifica la creación de interfaces.
 
@@ -56,7 +42,7 @@ A continuación, se presentan los paquetes incluidos en W3BTLaravelKit, junto co
 Ejemplo de un botón con DaisyUI:
 🔹<button class="btn btn-primary">Guardar</button>
 
-🌍 Laravel Lang
+#### 🌍 Laravel Lang
 
 📌 Sistema de gestión de traducciones en Laravel para internacionalización.
 
@@ -96,7 +82,7 @@ Ejemplo de creación de un módulo:
 
 🔹Este paquete permite una separación lógica del código, lo que facilita el mantenimiento y reusabilidad en distintos proyectos.
 
-📊 Livewire PowerGrid
+##### 📊 Livewire PowerGrid
 
 📌 Creación de tablas interactivas sin necesidad de JavaScript.
 
@@ -120,7 +106,7 @@ Ejemplo de uso en Blade:
 
 🔹 <livewire:cliente-table />
 
-🖼️ Blade UI Kit
+###### 🖼️ Blade UI Kit
 
 📌 Colección de componentes reutilizables para Laravel Blade.
 
@@ -138,7 +124,7 @@ Ejemplo de un input con Blade UI:
 
 🔹<x-input label="Correo Electrónico" name="email" placeholder="ejemplo@email.com" />
 
-🎨 Blade FontAwesome
+###### 🎨 Blade FontAwesome
 
 📌 Facilita el uso de íconos de FontAwesome en Laravel Blade.
 
@@ -155,13 +141,4 @@ Ejemplo de un input con Blade UI:
 Ejemplo de ícono en Blade:
 
 🔹<x-fas-user class="text-blue-500 w-6 h-6" />
-
-##### 🚀 Instalación y Uso  
-Al instalar el paquete, se habilitan dos comandos **Artisan** para su utilización:
-
-```bash
-php artisan w3btlaravelkit:install
-🔹 Instala automáticamente los paquetes esenciales y configura el entorno de desarrollo.
-php artisan w3btlaravelkit:livewire-module {module} {name}
-🔹 Genera un módulo con soporte para Livewire, facilitando la creación de componentes modulares en Laravel.
 
