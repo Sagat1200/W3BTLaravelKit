@@ -42,9 +42,7 @@
 
 ### Ejemplo de un botón con DaisyUI:
 
-[<button class="btn btn-primary">Guardar</button>](https://daisyui.com/components/button/)
-
-[alt text](image.png)
+[alt text](imagen-Botones_daysiUI.png)
 
 ## 🌍 Laravel Lang
 
