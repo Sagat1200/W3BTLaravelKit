@@ -11,16 +11,7 @@ En el desarrollo de software, uno de los mayores desafíos al iniciar un proyect
 
 **W3BTLaravelKit** resuelve estos problemas al proporcionar una solución que instala y configura automáticamente los paquetes más utilizados en el desarrollo de aplicaciones web y móviles con Laravel.
 
-#### 🚀 Instalación y Uso  
-Al instalar el paquete, se habilitan dos comandos **Artisan** para su utilización:
-
-```bash
-php artisan w3btlaravelkit:install
-🔹 Instala automáticamente los paquetes esenciales y configura el entorno de desarrollo.
-php artisan w3btlaravelkit:livewire-module {module} {name}
-🔹 Genera un módulo con soporte para Livewire, facilitando la creación de componentes modulares en Laravel.
-
-📦 Paquetes Incluidos en W3BTLaravelKit
+#### 📦 Paquetes Incluidos en W3BTLaravelKit
 A continuación, se presentan los paquetes incluidos en W3BTLaravelKit, junto con una breve descripción y sus beneficios.
 
 ✅ Laravel Livewire
@@ -116,3 +107,13 @@ Ejemplo de un input con Blade UI:
 
 Ejemplo de ícono en Blade:
 <x-fas-user class="text-blue-500 w-6 h-6" />
+
+##### 🚀 Instalación y Uso  
+Al instalar el paquete, se habilitan dos comandos **Artisan** para su utilización:
+
+```bash
+php artisan w3btlaravelkit:install
+🔹 Instala automáticamente los paquetes esenciales y configura el entorno de desarrollo.
+php artisan w3btlaravelkit:livewire-module {module} {name}
+🔹 Genera un módulo con soporte para Livewire, facilitando la creación de componentes modulares en Laravel.
+
