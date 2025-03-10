@@ -43,6 +43,7 @@ php artisan volt:install
 ### 9-Se actuializa la plantilla de diseño de **Laravel-Livewire** para que pueda ser utilizada tanto por el paquete asi como por:
 #### 1-Vite.js
 #### 2-BladeUI
+### Vista general de la plantilla modificada:
 ```bash
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
