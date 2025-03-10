@@ -41,8 +41,11 @@ composer require livewire/volt
 php artisan volt:install
 ```
 ### 9-Se actuializa la plantilla de diseño de **Laravel-Livewire** para que pueda ser utilizada tanto por el paquete asi como por:
-#### 1-Vite.js
-#### 2-BladeUI
+#### 1-Vite.js.
+#### 2-DaisyUI.
+#### 3-BladeUI.
+#### 4-Fonts.bunny
+#### 5-FontsAwesome.
 ### Vista general de la plantilla modificada:
 ```bash
 <!DOCTYPE html>
@@ -56,9 +59,9 @@ php artisan volt:install
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <meta name="description" content="{{ \$description ?? '' }}">
-    <meta name="keywords" content="{{ \$keywords ?? '' }}">
-    <meta name="author" content="{{ \$author ?? '' }}">
+    <meta name="description" content="{{ $description ?? '' }}">
+    <meta name="keywords" content="{{ $keywords ?? '' }}">
+    <meta name="author" content="{{ $author ?? '' }}">
     <link rel="shortcut icon" href="{{ asset('assets/img/') }}" type="image/x-icon">
 
     <!-- Fonts -->
@@ -78,4 +81,60 @@ php artisan volt:install
 </body>
 
 </html>
+```
+## 🎨 [DaisyUI](https://daisyui.com)
+### 10-Se instala **daisyUI** de su repositorio oficial, de forma automatica se instala la ultima version de **TailWind.CSS** y **Vite.JS**:
+```bash
+npm install tailwindcss@latest @tailwindcss/vite@latest daisyui@latest
+```
+### 11-Cambio en el codio del archivo **vite.config.js** para que pueda manejar, **tailwind.css** y pueda ser aprovechado tanto por el proyecto raiz asi por **Laravel-Modules** para el manejo correcto de los activos **Front-end**:
+```bash
+import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
+import tailwindcss from '@tailwindcss/vite';
+import { fileURLToPath, URL } from 'url';
+import fs from 'fs';
+import path from 'path';
+
+function collectModuleAssetsPaths(basePath, moduleDir) {
+    const modulesPath = path.resolve(basePath, moduleDir);
+    
+    if (!fs.existsSync(modulesPath)) {
+        return [];
+    }
+
+    const moduleFolders = fs.readdirSync(modulesPath);
+    
+    return moduleFolders.flatMap(folder => {
+        const jsPath = path.resolve(modulesPath, folder, 'resources/js/app.js');
+        const cssPath = path.resolve(modulesPath, folder, 'resources/css/app.css');
+        
+        return [
+            fs.existsSync(jsPath) ? jsPath : null,
+            fs.existsSync(cssPath) ? cssPath : null
+        ].filter(Boolean); // Filtra los valores null en caso de que no existan archivos
+    });
+}
+
+// Directorio base de resources
+const resourcesPath = fileURLToPath(new URL('./resources', import.meta.url));
+
+export default defineConfig({
+    plugins: [
+        laravel({
+            input: [
+                'resources/css/app.css',
+                'resources/js/app.js',
+                ...collectModuleAssetsPaths(resourcesPath, '../Modules')
+            ],
+            refresh: true,
+        }),
+        tailwindcss(), // Se agrega el plugin de Tailwind CSS 4 para Vite
+    ],
+    resolve: {
+        alias: {
+            '@': path.resolve(__dirname, 'resources/js'),
+        },
+    },
+});
 ```
