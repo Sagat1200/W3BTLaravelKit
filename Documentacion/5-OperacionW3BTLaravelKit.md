@@ -9,15 +9,15 @@ php artisan w3btlaravelkit:install
 ## ✅ [Laravel Livewire](https://livewire.laravel.com)
 
 ### Se ejecuta el instalador de composer:
-```sh
+```bash
 composer require livewire/livewire
 ```
 ### Se ejecuta el archivo de configuracion del paquete:
-```sh
+```bash
 php artisan livewire:publish --config
 ```
 ### Se publican los activos de **Laravel-Livewire** para manejo de **JavaScript** de lado del servidor de ser necesario:
-```sh
+```bash
 php artisan livewire:publish --assets
 ```
 ### Se actualiza el archivo **composer.json** del proyecto raiz en la parte de: **post-ipdate-cmd** y se inserta:
@@ -25,6 +25,6 @@ php artisan livewire:publish --assets
 "@php artisan vendor:publish --tag=livewire:assets --ansi --force"
 ```
 ### Se public los archivos stubs para su futuro manejo de ser necesario en actualizaciones de diseño de los componentes **Laravel-Livewire**:
-```sh
+```bash
 php artisan livewire:stubs
 ```
