@@ -67,6 +67,16 @@ class InstallW3BTLaravelKit extends Command
         shell_exec('composer require nwidart/laravel-modules');
         shell_exec('php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProvider"');
 
+         // NUEVO: Modificar config/modules.php para stubs habilitados y path a stubs/nwidart-stubs
+         $this->updateModulesConfig();
+
+          // NUEVO: Modificar el master.stub
+        $this->updateMasterStub();
+
+         // NUEVO: Ajustar el vite.stub con el nuevo contenido
+         $this->updateViteStub();
+
+
         // Modificar composer.json para agregar el post-update-cmd
         $this->updateComposerScripts();
 
@@ -285,6 +295,174 @@ JS;
 
         $this->info('✅ Se ha actualizado el archivo .env con los nuevos valores.');
     }
+
+    protected function updateModulesConfig()
+    {
+        $modulesConfigPath = config_path('modules.php');
+        if (!file_exists($modulesConfigPath)) {
+            $this->error('❌ No se encontró el archivo config/modules.php');
+            return;
+        }
+
+        $this->info('Actualizando config/modules.php para habilitar stubs y ruta a stubs/nwidart-stubs...');
+
+        // Leemos el contenido de config/modules.php
+        $content = file_get_contents($modulesConfigPath);
+
+        // Forzamos "'enabled' => true," dentro del array de stubs
+        $content = preg_replace("/('enabled' => )(?:true|false),/", "$1true,", $content);
+
+        // Forzamos "'path' => base_path('stubs/nwidart-stubs')"
+        // En caso de que ya existiera algo, lo sobrescribimos
+        $pattern = "/('path' => )base_path\((.*?)\)/";
+        $replacement = "$1base_path('stubs/nwidart-stubs')";
+        $content = preg_replace($pattern, $replacement, $content);
+
+        // Guardamos los cambios
+        file_put_contents($modulesConfigPath, $content);
+
+        $this->info('✅ Se ha actualizado config/modules.php correctamente (stubs habilitados y path configurado).');
+    }
+
+     /**
+     * Sobrescribe el archivo stubs/nwidart-stubs/views/master.stub
+     */
+    protected function updateMasterStub()
+    {
+        // Definir la ruta al archivo
+        $masterStubPath = base_path('stubs/nwidart-stubs/views/master.stub');
+
+        // Asegurarse de que la carpeta exista
+        if (! file_exists(dirname($masterStubPath))) {
+            mkdir(dirname($masterStubPath), 0755, true);
+        }
+
+        // Nuevo contenido del stub (exactamente el que nos compartiste)
+        $newStubContent = <<<HTML
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <meta name="description" content="{{ \$description ?? '' }}">
+    <meta name="keywords" content="{{ \$keywords ?? '' }}">
+    <meta name="author" content="{{ \$author ?? '' }}">
+    <link rel="shortcut icon" href="{{ asset('assets/img/') }}" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/8b186f73b9.js" crossorigin="anonymous"></script>
+
+    @livewireStyles
+    @bukStyles
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- Vite CSS --}}
+    {{-- {{ module_vite('build-\$LOWER_NAME\$', 'resources/assets/css/app.css') }} --}}
+</head>
+
+<body>
+    {{--{{ \$slot }}--}}
+    @livewireScripts
+    @bukScripts
+    {{-- Vite JS --}}
+    {{-- {{ module_vite('build-\$LOWER_NAME\$', 'resources/assets/js/app.js') }} --}}
+</body>
+
+</html>
+HTML;
+
+        // Escribir el contenido en el archivo master.stub
+        file_put_contents($masterStubPath, $newStubContent);
+
+        $this->info('✅ Se ha actualizado el archivo master.stub en stubs/nwidart-stubs/views.');
+    }
+
+     /**
+     * Sobrescribe el archivo stubs/nwidart-stubs/vite.stub
+     * con el contenido que nos indicaste.
+     */
+    protected function updateViteStub()
+    {
+        $viteStubPath = base_path('stubs/nwidart-stubs/vite.stub');
+
+        // Crear carpeta si no existe
+        if (! file_exists(dirname($viteStubPath))) {
+            mkdir(dirname($viteStubPath), 0755, true);
+        }
+
+        // Contenido nuevo de vite.stub
+        $newStubContent = <<<JS
+import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
+import { readdirSync, statSync } from 'fs';
+import { join,relative,dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+export default defineConfig({
+    build: {
+        outDir: '../../public/build-\$LOWER_NAME\$',
+        emptyOutDir: true,
+        manifest: true,
+    },
+    plugins: [
+        laravel({
+            publicDirectory: '../../public',
+            buildDirectory: 'build-\$LOWER_NAME\$',
+            input: [
+                __dirname + '/resources/assets/css/app.css',
+                __dirname + '/resources/assets/js/app.js'
+            ],
+            refresh: true,
+        }),
+    ],
+});
+// Scen all resources for assets file. Return array
+//function getFilePaths(dir) {
+//    const filePaths = [];
+//
+//    function walkDirectory(currentPath) {
+//        const files = readdirSync(currentPath);
+//        for (const file of files) {
+//            const filePath = join(currentPath, file);
+//            const stats = statSync(filePath);
+//            if (stats.isFile() && !file.startsWith('.')) {
+//                const relativePath = 'Modules/\$STUDLY_NAME\$/'+relative(__dirname, filePath);
+//                filePaths.push(relativePath);
+//            } else if (stats.isDirectory()) {
+//                walkDirectory(filePath);
+//            }
+//        }
+//    }
+//
+//    walkDirectory(dir);
+//    return filePaths;
+//}
+//
+//const __filename = fileURLToPath(import.meta.url);
+//const __dirname = dirname(__filename);
+//
+//const assetsDir = join(__dirname, 'resources/assets');
+//export const paths = getFilePaths(assetsDir);
+//
+//
+//export const paths = [
+//    'Modules/\$STUDLY_NAME\$/resources/assets/sass/app.scss',
+//    'Modules/\$STUDLY_NAME\$/resources/assets/js/app.js',
+//];
+JS;
+
+        file_put_contents($viteStubPath, $newStubContent);
+
+        $this->info('✅ Se ha actualizado el archivo vite.stub en stubs/nwidart-stubs.');
+    }
+
 
 
     /**
