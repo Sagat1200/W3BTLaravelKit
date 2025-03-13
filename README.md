@@ -22,16 +22,15 @@ Su objetivo es mejorar la **reactividad**, el **diseño de interfaces**, la **ex
 
 Al instalar **W3BTLaravelKit**, se configuran y optimizan los siguientes paquetes:
 
-|            Paquete               |                                              Descripción                                                 |
-|----------------------------------|----------------------------------------------------------------------------------------------------------|
-| **Laravel Livewire**             | Proporciona interactividad en tiempo real para aplicaciones SPA. *(Incluye soporte para Livewire Volt)*. |
-| **DaisyUI**                      | Microframework basado en **Tailwind CSS**, mejorando el diseño de interfaces y UX.                       |
-| **Laravel Lang**                 | Agrega soporte para múltiples idiomas *(por defecto, traduce de inglés a español)*.                      |
-| **Laravel Modules**              | Facilita la creación y gestión de módulos en proyectos Laravel.                                          |
-| **Livewire PowerGrid**           | Permite la creación de **tablas interactivas** con filtros, exportación y paginación.                    |
-| **Blade UI & Blade FontAwesome** | Añade compatibilidad con **componentes UI** e iconos **FontAwesome** en Blade.                           |
-| **Componentes Blade y Livewire** | De forma opcional puede instalar un conjunto de componenets de Blade y Livewire para el diseño           |
-                                   | de interfaces.                                                                                           |
+|            Paquete               |                                              Descripción                                                     |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------|
+| **Laravel Livewire**             | Proporciona interactividad en tiempo real para aplicaciones SPA. *(Incluye soporte para Livewire Volt)*.     |
+| **DaisyUI**                      | Microframework basado en **Tailwind CSS**, mejorando el diseño de interfaces y UX.                           |
+| **Laravel Lang**                 | Agrega soporte para múltiples idiomas *(por defecto, traduce de inglés a español)*.                          |
+| **Laravel Modules**              | Facilita la creación y gestión de módulos en proyectos Laravel.                                              |
+| **Livewire PowerGrid**           | Permite la creación de **tablas interactivas** con filtros, exportación y paginación.                        |
+| **Blade UI & Blade FontAwesome** | Añade compatibilidad con **componentes UI** e iconos **FontAwesome** en Blade.                               |
+| **Componentes Blade y Livewire** | De forma opcional puede instalar un conjunto de componenets de Blade y Livewire para el diseño de interfaces |
 
 Además, se incluye un **comando especial** para usar **Livewire dentro de Laravel Modules**, simplificando el desarrollo modular.
 
