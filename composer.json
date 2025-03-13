@@ -1,5 +1,6 @@
 {
     "name": "w3btech/w3btlaravelkit",
+    "version": "1.0.2",
     "description": "Paquete de Automatizacion Inicial de Configuracion de Proyectos Laravel PHP.",
     "type": "library",
     "license": "MIT",
