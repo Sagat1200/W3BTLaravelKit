@@ -16,7 +16,7 @@ Su objetivo es mejorar la **reactividad**, el **diseño de interfaces**, la **ex
 
 | Laravel | W3BTLaravelKit |
 |---------|----------------|
-| 12.0    | ^1.0           |
+| 12.0    | ^1.0.1         |
 
 ## 🛠 Paquetes Instalados Automáticamente
 
@@ -30,6 +30,8 @@ Al instalar **W3BTLaravelKit**, se configuran y optimizan los siguientes paquete
 | **Laravel Modules**              | Facilita la creación y gestión de módulos en proyectos Laravel.                                          |
 | **Livewire PowerGrid**           | Permite la creación de **tablas interactivas** con filtros, exportación y paginación.                    |
 | **Blade UI & Blade FontAwesome** | Añade compatibilidad con **componentes UI** e iconos **FontAwesome** en Blade.                           |
+| **Componentes Blade y Livewire** | De forma opcional puede instalar un conjunto de componenets de Blade y Livewire para el diseño           |
+                                   | de interfaces.                                                                                           |
 
 Además, se incluye un **comando especial** para usar **Livewire dentro de Laravel Modules**, simplificando el desarrollo modular.
 
@@ -56,6 +58,11 @@ composer require w3btech/w3btlaravelkit
 
 ```sh
 php artisan w3btlaravelkit:install
+```
+
+Opcional: Componentes diseñados para la interfaz de usuario
+```sh
+php artisan vendor:publish --tag=w3btlaravelkit-components
 ```
 Practicamente eso es todo, su entorno de desarrollo con los paquetes instalados y la configuracion necesaria para su funcionamiento esta echa, esperamos en 
 **W3BTechnologies de Mexico** que este paquete sea de su enetera satisfaccion.
