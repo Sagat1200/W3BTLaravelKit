@@ -34,7 +34,7 @@ class W3BTLaravelKitServiceProvider extends ServiceProvider
                 __DIR__.'/../Stubs/resources/views/components/w3btlaravelkit/ui/button-component.blade.php' 
                     => resource_path('views/components/w3btlaravelkit/ui/button-component.blade.php'),
             
-                __DIR__.'/../Stubs/resources/views/livewire/ui/toast-component.blade.php' 
+                    __DIR__.'/../Stubs/resources/views/livewire/w3btlaravelkit/ui/toast-component.blade.php' 
                     => resource_path('views/livewire/w3btlaravelkit/ui/toast-component.blade.php'),
             ], 'w3btlaravelkit-components');
         }
