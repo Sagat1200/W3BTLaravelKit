@@ -25,18 +25,17 @@ class W3BTLaravelKitServiceProvider extends ServiceProvider
 
             // 📌 Publicar Clases y Vistas de componentes en el Proyecto Laravel
             $this->publishes([
-                __DIR__.'/../../Stubs/app/View/Components/W3BTLaravelKit/UI/ButtonComponent.php' 
+                __DIR__.'/../Stubs/app/View/Components/W3BTLaravelKit/UI/ButtonComponent.php' 
                     => app_path('View/Components/W3BTLaravelKit/UI/ButtonComponent.php'),
-
-                __DIR__.'/../../Stubs/app/Livewire/W3BTLaravelKit/UI/ToastComponent.php' 
+            
+                __DIR__.'/../Stubs/app/Livewire/W3BTLaravelKit/UI/ToastComponent.php' 
                     => app_path('Livewire/W3BTLaravelKit/UI/ToastComponent.php'),
-
-                __DIR__.'/../../Stubs/resources/views/components/w3btlaravelkit/ui/button-component.blade.php' 
+            
+                __DIR__.'/../Stubs/resources/views/components/w3btlaravelkit/ui/button-component.blade.php' 
                     => resource_path('views/components/w3btlaravelkit/ui/button-component.blade.php'),
-
-                __DIR__.'/../../Stubs/resources/views/livewire/w3btlaravelkit/ui/toast-component.blade.php' 
+            
+                __DIR__.'/../Stubs/resources/views/livewire/w3btlaravelkit/ui/toast-component.blade.php' 
                     => resource_path('views/livewire/w3btlaravelkit/ui/toast-component.blade.php'),
-
             ], 'w3btlaravelkit-components');
         }
 
