@@ -16,7 +16,7 @@ Su objetivo es mejorar la **reactividad**, el **diseño de interfaces**, la **ex
 
 | Laravel | W3BTLaravelKit |
 |---------|----------------|
-| 12.0    | ^1.0.1         |
+| 12.0    | ^1.0.4         |
 
 ## 🛠 Paquetes Instalados Automáticamente
 
