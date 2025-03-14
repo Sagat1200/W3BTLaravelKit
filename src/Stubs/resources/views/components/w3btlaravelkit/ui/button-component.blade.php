@@ -57,5 +57,5 @@
         transform: translateY(-50%) translateX(-0.5rem);
     }
 </style>
-{{-- @include('components.ui.buttoncomponent', ['type' => '', 'class' => '',
+{{-- @include('components.w3btlaravelkit.ui.buttoncomponent', ['type' => '', 'class' => '',
     'tooltip' => '', 'icon' => '', 'tooltipPosition' => '', 'label' => '', 'badge' => '']) --}}

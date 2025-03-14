@@ -1,5 +1,5 @@
-{{-- @livewire('ui.toast-component') --}}
-{{-- <livewire:ui.toast-component /> --}}
+{{-- @livewire('w3btlaravelkit.ui.toast-component') --}}
+{{-- <livewire:w3btlaravelkit.ui.toast-component /> --}}
 
 <div>
     @php
