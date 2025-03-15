@@ -196,7 +196,7 @@ class W3BTLaravelKitServiceProvider extends ServiceProvider
         }
 
         if (class_exists(ThemeDropdownComponent::class)) {
-            Blade::component('w3btlaravelkit-paginator', ThemeDropdownComponent::class);
+            Blade::component('w3btlaravelkit-theme', ThemeDropdownComponent::class);
         }
 
         // ✅ Registrar Componentes Livewire solo si existen
