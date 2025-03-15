@@ -108,12 +108,36 @@ class W3BTLaravelKitServiceProvider extends ServiceProvider
                 __DIR__ . '/../Stubs/resources/views/components/w3btlaravelkit/ui/paginatorcomponent.blade.php'
                 => resource_path('views/components/w3btlaravelkit/ui/paginatorcomponent.blade.php'),
 
+                // 📌 ThemeDropdown Component
+                __DIR__ . '/../Stubs/app/View/Components/W3BTLaravelKit/UI/ThemeDropdownComponent.php'
+                => app_path('View/Components/W3BTLaravelKit/UI/ThemeDropdownComponent.php'),
+
+                // 📌 Blade ThemeDropdown Component Views
+                __DIR__ . '/../Stubs/resources/views/components/w3btlaravelkit/ui/themedropdowncomponent.blade.php'
+                => resource_path('views/components/w3btlaravelkit/ui/themedropdowncomponent.blade.php'),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 // 📌 Livewire CheckboxToggle Component
-                __DIR__ . '/../Stubs/app/Livewire/W3BTLaravelKit/UI/ToastComponent.php'
+                __DIR__ . '/../Stubs/app/Livewire/W3BTLaravelKit/UI/CheckboxToggleComponent.php'
                 => app_path('Livewire/W3BTLaravelKit/UI/CheckboxToggleComponent.php'),
 
                 // 📌 Livewire checkbox-toggle-component Views
-                __DIR__ . '/../Stubs/resources/views/livewire/w3btlaravelkit/ui/toast-component.blade.php'
+                __DIR__ . '/../Stubs/resources/views/livewire/w3btlaravelkit/ui/checkboxtogglecomponent.blade.php'
                 => resource_path('views/livewire/w3btlaravelkit/ui/checkbox-toggle-component.blade.php'),
 
                 // 📌 Livewire Toast Component
@@ -125,11 +149,11 @@ class W3BTLaravelKitServiceProvider extends ServiceProvider
                 => resource_path('views/livewire/w3btlaravelkit/ui/toast-component.blade.php'),
 
                 // 📌 Livewire Session Flash Component
-                __DIR__ . '/../Stubs/app/Livewire/W3BTLaravelKit/UI/ToastComponent.php'
+                __DIR__ . '/../Stubs/app/Livewire/W3BTLaravelKit/UI/SessionFlashComponent.php'
                 => app_path('Livewire/W3BTLaravelKit/UI/SessionFlashComponent.php'),
 
                 // 📌 Livewire SessionFlashComponent Views
-                __DIR__ . '/../Stubs/resources/views/livewire/w3btlaravelkit/ui/toast-component.blade.php'
+                __DIR__ . '/../Stubs/resources/views/livewire/w3btlaravelkit/ui/session-flash-component.blade.php'
                 => resource_path('views/livewire/w3btlaravelkit/ui/session-flash-component.blade.php'),
             ], 'w3btlaravelkit-components');
         }
