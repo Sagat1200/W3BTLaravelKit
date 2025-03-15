@@ -116,22 +116,6 @@ class W3BTLaravelKitServiceProvider extends ServiceProvider
                 __DIR__ . '/../Stubs/resources/views/components/w3btlaravelkit/ui/themedropdowncomponent.blade.php'
                 => resource_path('views/components/w3btlaravelkit/ui/themedropdowncomponent.blade.php'),
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 // 📌 Livewire CheckboxToggle Component
                 __DIR__ . '/../Stubs/app/Livewire/W3BTLaravelKit/UI/CheckboxToggleComponent.php'
                 => app_path('Livewire/W3BTLaravelKit/UI/CheckboxToggleComponent.php'),
