@@ -41,7 +41,7 @@ class W3BTLaravelKitServiceProvider extends ServiceProvider
                 => app_path('View/Components/W3BTLaravelKit/UI/ButtonComponent.php'),
 
                 // 📌 Blade Button Component Views
-                __DIR__ . '/../Stubs/resources/views/components/w3btlaravelkit/ui/button-component.blade.php'
+                __DIR__ . '/../Stubs/resources/views/components/w3btlaravelkit/ui/buttoncomponent.blade.php'
                 => resource_path('views/components/w3btlaravelkit/ui/buttoncomponent.blade.php'),
 
                 // 📌 InputDate Component
@@ -137,7 +137,7 @@ class W3BTLaravelKitServiceProvider extends ServiceProvider
                 => app_path('Livewire/W3BTLaravelKit/UI/CheckboxToggleComponent.php'),
 
                 // 📌 Livewire checkbox-toggle-component Views
-                __DIR__ . '/../Stubs/resources/views/livewire/w3btlaravelkit/ui/checkboxtogglecomponent.blade.php'
+                __DIR__ . '/../Stubs/resources/views/livewire/w3btlaravelkit/ui/checkbox-toggle-component.blade.php'
                 => resource_path('views/livewire/w3btlaravelkit/ui/checkbox-toggle-component.blade.php'),
 
                 // 📌 Livewire Toast Component
