@@ -22,6 +22,6 @@ class PaginatorComponent extends Component
      */
     public function render(): View|string
     {
-        return view('components::components.ui/paginatorcomponent');
+        return view('components::components.ui.paginatorcomponent');
     }
 }
