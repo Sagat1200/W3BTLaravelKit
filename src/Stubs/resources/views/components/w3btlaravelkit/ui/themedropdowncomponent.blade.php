@@ -6,7 +6,8 @@
         'emerald', 'corporate', 'synthwave', 'retro', 'cyberpunk',
         'valentine', 'halloween', 'garden', 'forest', 'aqua', 'pastel',
         'fantasy', 'wireframe', 'black', 'luxury', 'dracula', 'cmyk',
-        'autumn', 'business', 'acid', 'lemonade', 'coffee', 'dim', 'nord'
+        'autumn', 'business', 'acid', 'lemonade', 'coffee', 'dim', 'nord', 
+        'sunset', 'caramellate', 'abyss', 'silk'
     ]
 ])
 
