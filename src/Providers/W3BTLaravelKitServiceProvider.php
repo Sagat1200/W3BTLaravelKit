@@ -8,7 +8,6 @@ use Illuminate\Support\ServiceProvider;
 use App\Livewire\W3BTLaravelKit\UI\ToastComponent;
 use w3btlaravelkit\Commands\InstallW3BTLaravelKit;
 use App\View\Components\W3BTLaravelKit\UI\LinkComponent;
-use w3btlaravelkit\Commands\MakeLivewireModuleComponent;
 use App\Livewire\W3BTLaravelKit\UI\SessionFlashComponent;
 use App\View\Components\W3BTLaravelKit\UI\ButtonComponent;
 use App\Livewire\W3BTLaravelKit\UI\CheckboxToggleComponent;
@@ -31,7 +30,6 @@ class W3BTLaravelKitServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 InstallW3BTLaravelKit::class,
-                MakeLivewireModuleComponent::class,
             ]);
 
             // 📌 Publicar Clases y Vistas de componentes en el Proyecto Laravel
