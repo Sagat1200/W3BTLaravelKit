@@ -211,10 +211,30 @@ JS;
         $powerGridCssPath = resource_path('js/app.css');
 
         // Contenido para app.css
-        $cssContent = "@import \"tailwindcss\";\n/* Daisy UI */\n@plugin \"daisyui\" {\n  themes: all;\n}";
+        $cssContent = <<<CSS
+@import "tailwindcss";
+
+/* Daisy UI */
+@plugin "daisyui" {
+  themes: all;
+}
+
+/* Custom Variant for dark theme (DaisyUI night) */
+@custom-variant dark (&:where([data-theme=night], [data-theme=night] *));
+
+/* Tailwind JIT Sources for PowerGrid */
+@source '../../app/Livewire/*Table.php';
+@source '../../app/Livewire/**/*Table.php';
+@source '../../vendor/power-components/livewire-powergrid/src/Themes/DaisyUI.php';
+@source '../../vendor/power-components/livewire-powergrid/resources/views/**/*.php';
+CSS;
         
         // Contenido para app.js
-        $jsContent = "import './bootstrap';\n// PowerGrid\nimport './../../vendor/power-components/livewire-powergrid/dist/powergrid'\nimport './../../vendor/power-components/livewire-powergrid/dist/tailwind.css'\nimport flatpickr from \"flatpickr\"; \nimport 'flatpickr/dist/flatpickr.min.css';\nimport SlimSelect from 'slim-select'\nwindow.SlimSelect = SlimSelect";
+        $jsContent = "import './bootstrap';\n// PowerGrid
+        \nimport './../../vendor/power-components/livewire-powergrid/dist/powergrid'
+        \nimport flatpickr from \"flatpickr\"; \nimport 'flatpickr/dist/flatpickr.min.css';
+        \nimport SlimSelect from 'slim-select'
+        \nwindow.SlimSelect = SlimSelect";
 
         // Contenido para PowerGrid CSS
         $powerGridCssContent = "/* PowerGrid */\n@import \"~slim-select/dist/slimselect.css\";";
