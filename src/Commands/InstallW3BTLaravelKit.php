@@ -59,7 +59,6 @@ class InstallW3BTLaravelKit extends Command
         shell_exec('composer require owenvoke/blade-fontawesome');
         shell_exec('php artisan vendor:publish --tag=blade-fontawesome-config');
 
-
         // Modificar .env con las variables de entorno necesarias
         $this->updateEnvFile();
 
@@ -70,6 +69,13 @@ class InstallW3BTLaravelKit extends Command
         // Instalar Laravel Livewire para Laravel Modules
         shell_exec('composer require mhmiton/laravel-modules-livewire');
         shell_exec('php artisan vendor:publish --provider="Mhmiton\LaravelModulesLivewire\LaravelModulesLivewireServiceProvider"');
+
+        // Instalar Neuron AI
+        shell_exec('composer require inspector-apm/neuron-ai');
+
+        // Instalar Laravel WorkFlow
+        shell_exec('composer require laravel-workflow/laravel-workflow');
+        shell_exec('php artisan vendor:publish --provider="Workflow\Providers\WorkflowServiceProvider" --tag="migrations"');
 
          // NUEVO: Modificar config/modules.php para stubs habilitados y path a stubs/nwidart-stubs
          $this->updateModulesConfig();
@@ -792,7 +798,7 @@ JS;
         // Agregar merge-plugin si no existe
         if (!isset($composerJson['extra']['merge-plugin'])) {
             $composerJson['extra']['merge-plugin'] = [
-                "include" => ["Modules/*/composer.json"]
+                "include" => ["Modules/\*/composer.json"]
             ];
             $this->info('✅ Se ha agregado merge-plugin en composer.json');
         } else {
