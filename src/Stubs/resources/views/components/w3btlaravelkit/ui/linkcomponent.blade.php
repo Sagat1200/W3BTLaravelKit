@@ -63,7 +63,7 @@
         transform: translateY(-50%) translateX(-0.5rem);
     }
 </style>
-{{-- @include('components::components.ui.linkcomponent', [
+{{-- @include('components.w3btlaravelkit.ui.linkcomponent', [
       'route' => 'RUTA',
       'text' => 'TEXTO',
       'icon' => 'ICONO',

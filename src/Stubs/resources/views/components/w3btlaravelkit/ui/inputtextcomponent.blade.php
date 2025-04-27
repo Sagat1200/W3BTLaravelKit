@@ -8,7 +8,7 @@
         </div>
     @enderror
 </div>
-{{-- @include('components::components.ui.inputtextcomponent', [
+{{-- @include('components.w3btlaravelkit.ui.inputtextcomponent', [
   'type' => 'text',
   'placeholder' => 'Nombre',
   'model' => 'name',

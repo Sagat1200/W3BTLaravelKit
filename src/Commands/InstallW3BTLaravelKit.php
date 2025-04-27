@@ -127,6 +127,7 @@ class InstallW3BTLaravelKit extends Command
 <body>
     {{ \$slot }}
     @livewireScripts
+    @livewire('w3btlaravelkit.ui.toast-component')
     @bukScripts
 </body>
 

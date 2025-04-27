@@ -15,8 +15,12 @@ use App\View\Components\W3BTLaravelKit\UI\InputDateComponent;
 use App\View\Components\W3BTLaravelKit\UI\InputFileComponent;
 use App\View\Components\W3BTLaravelKit\UI\InputTextComponent;
 use App\View\Components\W3BTLaravelKit\UI\PaginatorComponent;
+use App\View\Components\W3BTLaravelKit\Design\HeaderComponent;
+use App\View\Components\W3BTLaravelKit\Design\AppMenuComponent;
+use App\View\Components\W3BTLaravelKit\Design\TableNameComponent;
 use App\View\Components\W3BTLaravelKit\UI\InputTextAreaComponent;
 use App\View\Components\W3BTLaravelKit\UI\ThemeDropdownComponent;
+use App\View\Components\W3BTLaravelKit\Design\CenterHeroComponent;
 use App\View\Components\W3BTLaravelKit\UI\InputTextLowerComponent;
 use App\View\Components\W3BTLaravelKit\UI\InputTextReadOnlyComponent;
 
@@ -34,6 +38,38 @@ class W3BTLaravelKitServiceProvider extends ServiceProvider
 
             // 📌 Publicar Clases y Vistas de componentes en el Proyecto Laravel
             $this->publishes([
+                // 📌 AppMenu Component
+                __DIR__ . '/../Stubs/app/View/Components/W3BTLaravelKit/Design/AppMenuComponent.php'
+                => app_path('View/Components/W3BTLaravelKit/Design/AppMenuComponent.php'),
+
+                // 📌 Appmenu Component Views
+                __DIR__ . '/../Stubs/resources/views/components/w3btlaravelkit/design/appmenucomponent.blade.php'
+                => resource_path('views/components/w3btlaravelkit/design/appmenucomponent.blade.php'),
+
+                // 📌 Center Hero Component
+                __DIR__ . '/../Stubs/app/View/Components/W3BTLaravelKit/Design/CenterHeroComponent.php'
+                => app_path('View/Components/W3BTLaravelKit/Design/CenterheroComponent.php'),
+
+                // 📌 Center Hero Component Views
+                __DIR__ . '/../Stubs/resources/views/components/w3btlaravelkit/design/centerhero-component.blade.php'
+                => resource_path('views/components/w3btlaravelkit/design/centerhero-component.blade.php'),
+
+                // 📌 Header Component
+                __DIR__ . '/../Stubs/app/View/Components/W3BTLaravelKit/Design/HeaderComponent.php'
+                => app_path('View/Components/W3BTLaravelKit/Design/HeaderComponent.php'),
+
+                // 📌 Header Component Views
+                __DIR__ . '/../Stubs/resources/views/components/w3btlaravelkit/design/headercomponent.blade.php'
+                => resource_path('views/components/w3btlaravelkit/design/headercomponent.blade.php'),
+
+                // 📌 TableName Component
+                __DIR__ . '/../Stubs/app/View/Components/W3BTLaravelKit/Design/TableNameComponent.php'
+                => app_path('View/Components/W3BTLaravelKit/Design/TableNameComponent.php'),
+
+                // 📌 Table Name Component Views
+                __DIR__ . '/../Stubs/resources/views/components/w3btlaravelkit/design/tablenamecomponent.blade.php'
+                => resource_path('views/components/w3btlaravelkit/design/tablenamecomponent.blade.php'),
+
                 // 📌 Button Component
                 __DIR__ . '/../Stubs/app/View/Components/W3BTLaravelKit/UI/ButtonComponent.php'
                 => app_path('View/Components/W3BTLaravelKit/UI/ButtonComponent.php'),
@@ -141,6 +177,22 @@ class W3BTLaravelKitServiceProvider extends ServiceProvider
         }
 
         // ✅ Registrar Componentes Blade solo si existen
+        if (class_exists(AppMenuComponent::class)) {
+            Blade::component('w3btlaravelkit-appmenu', AppMenuComponent::class);
+        }
+
+        if (class_exists(CenterHeroComponent::class)) {
+            Blade::component('w3btlaravelkit-appmenu', CenterHeroComponent::class);
+        }
+
+        if (class_exists(HeaderComponent::class)) {
+            Blade::component('w3btlaravelkit-appmenu', HeaderComponent::class);
+        }
+
+        if (class_exists(TableNameComponent::class)) {
+            Blade::component('w3btlaravelkit-appmenu', TableNameComponent::class);
+        }
+
         if (class_exists(ButtonComponent::class)) {
             Blade::component('w3btlaravelkit-button', ButtonComponent::class);
         }
@@ -178,7 +230,7 @@ class W3BTLaravelKitServiceProvider extends ServiceProvider
         }
 
         if (class_exists(ThemeDropdownComponent::class)) {
-            Blade::component('w3btlaravelkit-theme', ThemeDropdownComponent::class);
+            Blade::component('w3btlaravelkit-themedropdown', ThemeDropdownComponent::class);
         }
 
         // ✅ Registrar Componentes Livewire solo si existen
@@ -187,11 +239,11 @@ class W3BTLaravelKitServiceProvider extends ServiceProvider
         }
 
         if (class_exists(CheckboxToggleComponent::class)) {
-            Livewire::component('w3btlaravelkit.toast', CheckboxToggleComponent::class);
+            Livewire::component('w3btlaravelkit.checkboxtoggle', CheckboxToggleComponent::class);
         }
 
         if (class_exists(SessionFlashComponent::class)) {
-            Livewire::component('w3btlaravelkit.toast', SessionFlashComponent::class);
+            Livewire::component('w3btlaravelkit.sessionflash', SessionFlashComponent::class);
         }
     }
 }
