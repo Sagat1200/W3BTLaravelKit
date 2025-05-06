@@ -66,10 +66,6 @@ class InstallW3BTLaravelKit extends Command
         shell_exec('composer require nwidart/laravel-modules');
         shell_exec('php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProvider"');
 
-        // Instalar Laravel Livewire para Laravel Modules
-        shell_exec('composer require mhmiton/laravel-modules-livewire');
-        shell_exec('php artisan vendor:publish --provider="Mhmiton\LaravelModulesLivewire\LaravelModulesLivewireServiceProvider"');
-
         // Instalar Neuron AI
         shell_exec('composer require inspector-apm/neuron-ai');
 

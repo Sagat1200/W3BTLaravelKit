@@ -5,6 +5,7 @@ namespace w3btlaravelkit\Providers;
 use Livewire\Livewire;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use w3btlaravelkit\Commands\ModulesMakeLivewire;
 use App\Livewire\W3BTLaravelKit\UI\ToastComponent;
 use w3btlaravelkit\Commands\InstallW3BTLaravelKit;
 use App\View\Components\W3BTLaravelKit\UI\LinkComponent;
@@ -34,6 +35,7 @@ class W3BTLaravelKitServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 InstallW3BTLaravelKit::class,
+                ModulesMakeLivewire::class
             ]);
 
             // 📌 Publicar Clases y Vistas de componentes en el Proyecto Laravel
